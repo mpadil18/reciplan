@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reciplan/static/css/main.e84bd07c.chunk.css",
-    "main.js": "/reciplan/static/js/main.68546b3f.chunk.js",
-    "main.js.map": "/reciplan/static/js/main.68546b3f.chunk.js.map",
+    "main.js": "/reciplan/static/js/main.9c9c7cdc.chunk.js",
+    "main.js.map": "/reciplan/static/js/main.9c9c7cdc.chunk.js.map",
     "runtime-main.js": "/reciplan/static/js/runtime-main.5d37994f.js",
     "runtime-main.js.map": "/reciplan/static/js/runtime-main.5d37994f.js.map",
     "static/css/2.458499d8.chunk.css": "/reciplan/static/css/2.458499d8.chunk.css",
@@ -52,6 +52,6 @@
     "static/css/2.458499d8.chunk.css",
     "static/js/2.019d0d96.chunk.js",
     "static/css/main.e84bd07c.chunk.css",
-    "static/js/main.68546b3f.chunk.js"
+    "static/js/main.9c9c7cdc.chunk.js"
   ]
 }
