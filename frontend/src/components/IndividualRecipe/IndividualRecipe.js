@@ -12,7 +12,7 @@ import {
 } from "@material-ui/core/styles";
 import green from "@material-ui/core/colors/green";
 
-import apiClient from "../../services/apiClient";
+// import apiClient from "../../services/apiClient";
 import navbar from "../../assets/navbar.jpg";
 import "./IndividualRecipe.css";
 
@@ -190,50 +190,50 @@ export default function IndividualRecipe({
   // }, [recipeId]);
 
   // get comments for cur recipe.
-  useEffect(() => {
-    const fetchCurrentComments = async () => {
-      const { data, error } = await apiClient.getCurrentComments(recipeId);
-      if (data) {
-        console.log(
-          "data.getAllComments: >>>>>>>>>>>>>>> ",
-          data.getAllComments
-        );
-        setCurComments(data.getAllComments);
-      }
-      if (error) {
-        alert(`IndividualRecipe.js ${error}`);
-      }
-    };
-    fetchCurrentComments();
-  }, [recipeId]);
+  // useEffect(() => {
+  //   const fetchCurrentComments = async () => {
+  //     const { data, error } = await apiClient.getCurrentComments(recipeId);
+  //     if (data) {
+  //       console.log(
+  //         "data.getAllComments: >>>>>>>>>>>>>>> ",
+  //         data.getAllComments
+  //       );
+  //       setCurComments(data.getAllComments);
+  //     }
+  //     if (error) {
+  //       alert(`IndividualRecipe.js ${error}`);
+  //     }
+  //   };
+  //   fetchCurrentComments();
+  // }, [recipeId]);
 
   // When user post new comment
 
-  const handleSubmit = async (e) => {
-    setIsExpanded(false);
-    e.preventDefault();
-    const { data, error } = await apiClient.postComment({ comment }, recipeId);
-    if (data) {
-      console.log("data.publishComment: >>>>>>>>> ", data.publishComment);
-      setCurComments((prevState) => [data.publishComment, ...prevState]);
-    }
-    if (error) {
-      alert(error);
-    }
-    setComment("");
-  };
+  // const handleSubmit = async (e) => {
+  //   setIsExpanded(false);
+  //   e.preventDefault();
+  //   const { data, error } = await apiClient.postComment({ comment }, recipeId);
+  //   if (data) {
+  //     console.log("data.publishComment: >>>>>>>>> ", data.publishComment);
+  //     setCurComments((prevState) => [data.publishComment, ...prevState]);
+  //   }
+  //   if (error) {
+  //     alert(error);
+  //   }
+  //   setComment("");
+  // };
 
-  useEffect(() => {
-    const fetchUserProfile = async () => {
-      if (user) {
-        const { data, error } = await apiClient.getProfileFromUserId(user?.id);
-        if (data) {
-          setUserProfileImg(data.image_url);
-        }
-      }
-    };
-    fetchUserProfile();
-  }, [user?.id]);
+  // useEffect(() => {
+  //   const fetchUserProfile = async () => {
+  //     if (user) {
+  //       const { data, error } = await apiClient.getProfileFromUserId(user?.id);
+  //       if (data) {
+  //         setUserProfileImg(data.image_url);
+  //       }
+  //     }
+  //   };
+  //   fetchUserProfile();
+  // }, [user?.id]);
 
   const handleTextAreaChange = (e) => {
     setComment(e.target.value);
