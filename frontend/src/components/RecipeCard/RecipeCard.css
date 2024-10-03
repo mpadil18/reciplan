@@ -36,7 +36,7 @@
   margin-bottom: 10px;
 }
 .card-links {
-  margin: 0 10px;
+  margin: 0 10px 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;

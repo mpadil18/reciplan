@@ -9,12 +9,15 @@ export default function Footer() {
       linkedin: "https://www.linkedin.com/in/andrew-l-2538b0208/"
     },
     {
+      name: "AW",
+      linkedin: "https://www.linkedin.com/in/awang2330/"
+    },
+    {
       name: "MP",
       linkedin: "https://www.linkedin.com/in/maritza-padilla/"
     },
-    {
-      name: "AW",
-      linkedin: "https://www.linkedin.com/in/awang2330/"
+    {name: "AS",
+      linkedin:"https://www.linkedin.com/in/andrew-sanchez-ucsc/"
     }
   ];
   return (

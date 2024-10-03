@@ -25,6 +25,7 @@ import dairyfreeIcon from "../../assets/dairyfree-icon.svg";
 import glutenfreeIcon from "../../assets/glutenfree-icon.svg";
 import heart from "../../assets/heart.svg";
 import heartFill from "../../assets/heart-fill.svg";
+import Recipes from "../../data/all_recipes.json"
 
 const shuffle = (state_arr) => {
     let ctr = state_arr.length,
@@ -60,7 +61,7 @@ export default function SampleLayout({
         "Calories",
     ];
 
-    console.log("extra information:", extraInformation);
+    console.log("extra information:", extraInformation, recipeInfo);
 
     const [saved, setSaved] = useState(false);
     const { recipeId } = useParams();
@@ -172,12 +173,12 @@ export default function SampleLayout({
 
     useEffect(() => {
         const top_shuffled = shuffle(
-            recipes.filter(
-                (r) => r.rating >= 75 && r.api_id !== recipeInfo.api_id
+            (Recipes.all_recipes).filter(
+                (r) => ((r.rating >= 75) && (r.id !== parseInt(recipeId)))
             )
         );
 
-        // console.log(top_shuffled, ": topshuffled");
+        // console.log(top_shuffled, ": topshuffled", top_shuffled[0].id, recipeId);
         setTopRecipes([...top_shuffled]);
     }, [recipeId, recipes]);
 
@@ -235,7 +236,8 @@ export default function SampleLayout({
                     <div className="Layout_Image_Div">
                         <img
                             className="Layout_Image"
-                            src={recipeInfo.image_url}
+                            src={(`/food_pics/${recipeInfo?.image_url}.png`)}
+                            alt={(`${recipeInfo?.title}`)}
                         />
                     </div>
                     <div className="Layout_Ingredients_Info_Wrapper">
@@ -300,10 +302,10 @@ export default function SampleLayout({
                         className="Layout_Title_Share"
                         style={{ margin: "15px 0px" }}
                     >
-                        <div className="ShareThisRecipe">
+                        {/* <div className="ShareThisRecipe">
                             Share this recipe:
                         </div>
-                        <SocialMediaShare recipeInfo={recipeInfo} />
+                        <SocialMediaShare recipeInfo={recipeInfo} /> */}
                     </div>
                     <div className="Layout_Space_BetweenLines">
                         <div className="Layout_Horizontal_Line">

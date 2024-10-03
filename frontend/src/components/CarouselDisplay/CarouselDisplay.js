@@ -47,7 +47,8 @@ export default function CarouselDisplay({
 
   return (
     <div className="CarouselDisplay">
-      {justOnce && (
+      {/* <p>{recipes[0].title}</p> */}
+      {justOnce &&  (
         <Carousel responsive={responsive}>
           {recipes
             .filter((r) => (r.category & bitValue) === bitValue)
@@ -62,6 +63,22 @@ export default function CarouselDisplay({
             ))}
         </Carousel>
       )}
+
+      {type === "rec" ? (
+        <Carousel responsive={responsive}>
+          {recipes
+            .slice(0, 10)
+            .map((r) => (
+              <RecipeCard
+                key={r.id}
+                user={user}
+                recipeInfo={r}
+                handleSave={handleSave}
+                handleUnsave={handleUnsave}
+              />
+            ))}
+        </Carousel>
+      ) : null}
 
       {type === "expense" ? (
         <Carousel responsive={responsive}>

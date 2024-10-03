@@ -3,27 +3,29 @@ import { useEffect, useState } from "react";
 import "./Home.css";
 import home from "../../assets/home.jpg";
 import CarouselDisplay from "../CarouselDisplay/CarouselDisplay";
-import apiClient from "../../services/apiClient";
+// import apiClient from "../../services/apiClient";
+
+import Recipes from "../../data/all_recipes.json"
 
 export default function Home({ user, handleSave, handleUnsave }) {
-    const [recipes, setRecipes] = useState([]);
+    const [recipes, setRecipes] = useState(Recipes.all_recipes);
     const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
     const [displayByRec, setDisplayByRec] = useState(true)
     const [sortby, setSortby] = useState("price");
     const [bitValue, setBitValue] = useState(0);
 
-    useEffect(() => {
-        const fetchRecipes = async () => {
-            const { data, error } = await apiClient.fetchAllRecipes();
-            if (data) {
-                setRecipes(data.recipes);
-            }
-            if (error) {
-                console.log(error);
-            }
-        };
-        fetchRecipes();
-    }, []);
+    // useEffect(() => {
+    //     const fetchRecipes = async () => {
+    //         const { data, error } = await apiClient.fetchAllRecipes();
+    //         if (data) {
+    //             setRecipes(data.recipes);
+    //         }
+    //         if (error) {
+    //             console.log(error);
+    //         }
+    //     };
+    //     fetchRecipes();
+    // }, []);
 
     const toggleRecBtn = () => {
         setDisplayByRec(true)
@@ -114,7 +116,14 @@ export default function Home({ user, handleSave, handleUnsave }) {
                     ) : null}
                 </div>
             </div>
-            
+            <CarouselDisplay
+                        user={user}
+                        recipes={recipes}
+                        handleSave={handleSave}
+                        handleUnsave={handleUnsave}
+                        justOnce={true}
+                        bitValue={bitValue}
+                    />           
 
             {displayByRec ? 
                 <div>
@@ -126,6 +135,9 @@ export default function Home({ user, handleSave, handleUnsave }) {
                         handleUnsave={handleUnsave}
                         justOnce={true}
                         bitValue={bitValue}
+                        type={"rec"}
+                        rangeA={0}
+                        rangeB={500}
                     />
                 </div>
                 :

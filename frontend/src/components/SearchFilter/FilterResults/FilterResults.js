@@ -22,6 +22,35 @@ export default function FilterResults({ user, recipes, handleSave, handleUnsave 
     'Drink'
   ]
 
+  // const data = [
+  //   'Vegetarian',
+  //   'Vegan',
+  //   'Gluten Free',
+  //   'Dairy Free',
+  //   'Breakfast',
+  //   'Main Course',
+  //   'Side Dish',
+  //   'Salad',
+  //   'Appetizer',
+  //   'Soup',
+  //   'Finger Food',
+  //   'Drink'
+  // ]
+
+  // // const [category, setCategory] = useState(categoryType !== "View All" ? (1 << (11 - data.indexOf(categoryType))) : 0)
+  // const [selectedCategories, setSelectedCategories] = []
+  // const [currRecipes, setCurrRecipes] = []
+  // const filterByCategory = () => {
+  //   setCurrRecipes([])
+  //   for (let curr_category = 0; curr_category < selectedCategories.length; curr_category++) {
+  //     for (let curr_recipe = 0; curr_recipe < Recipes.all_recipes.length; curr_recipe++) {
+  //       if ((selectedCategories[curr_category] in Recipes[curr_recipe].category)) {
+  //         setCurrRecipes(currRecipes.push(Recipes[curr_recipe]))
+  //       }
+  //     }
+  //   }
+  // }
+
   const [category, setCategory] = useState(categoryType !== "View All" ? (1 << (11 - data.indexOf(categoryType))) : 0)
 
   return (

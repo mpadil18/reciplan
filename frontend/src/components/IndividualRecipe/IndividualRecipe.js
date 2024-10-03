@@ -21,6 +21,8 @@ import useReadjustTextareaHeight from "./useReadjustTextareaHeight";
 import SocialMediaShare from "./SocialMediaShare/SocialMediaShare";
 import SampleLayout from "./SampleLayout";
 
+import Recipes from "../../data/all_recipes.json"
+
 // convert string to array, the str is in format of:
 // Number + "[" + ingrdients + "]"
 // brackets used to determine start and ending of current string
@@ -104,7 +106,7 @@ export default function IndividualRecipe({
   const outerHeight = useRef(INITIAL_HEIGHT);
   const textRef = useRef(null);
   const containerRef = useRef(null);
-  useReadjustTextareaHeight(textRef, comment);
+  // useReadjustTextareaHeight(textRef, comment);
 
   const onExpand = () => {
     if (!isExpanded) {
@@ -119,76 +121,73 @@ export default function IndividualRecipe({
   };
 
   useEffect(() => {
-    setRecipeIngredients([]);
-    setRecipeInstructions([]);
+    console.log(Recipes)
+    setRecipeIngredients(getIndividualRecipe(parseInt(recipeId)).ingredients);
+    setRecipeInstructions(getIndividualRecipe(parseInt(recipeId)).steps);
   }, [recipeId]);
 
-  // Method 1:
+  const getIndividualRecipe = (recipeId) => {
+    for (let i = 0; i < Recipes.all_recipes.length; i++) {
+      if (Recipes.all_recipes[i].id === parseInt(recipeId, 10)) {
+        // console.log("FOUND")
+        return Recipes.all_recipes[i];
+      }
+    }
+ }
+
+ useEffect(() => {
+  const fetchCurrentRecipe = () => {
+    setIsLoading(true);
+    const data = getIndividualRecipe(recipeId);
+
+    if (data) {
+      // stringToArray(data.ingredients, setRecipeIngredients);
+      stringToArray(data.steps, setRecipeInstructions);
+      setRecipeInfo(data);
+      setExtraInformation({
+        ingredients: data.ingredients.length,
+        rating: data.rating + "%",
+        readyInMinutes: data.prep_time + " mins",
+        servings: data.servings,
+        pricePerServing: "$" + data.expense / 100,
+        calories: getCalories(data.description),
+      });
+    }
+    setIsLoading(false);
+
+  };
+  fetchCurrentRecipe();
+}, [recipeId]);
 
   // useEffect(() => {
-  //   const fetchRecipeInfo = async () => {
+  //   const fetchCurrentRecipe = async () => {
   //     setIsLoading(true);
-  //     const { data, error } = await apiClient.fetchIndividualRecipeInfo(
-  //       recipeId
-  //     );
+  //     const { data, error } = await apiClient.getIndividualRecipe(recipeId);
+
   //     if (data) {
+  //       stringToArray(data.ingredients, setRecipeIngredients);
+  //       stringToArray(data.steps, setRecipeInstructions);
   //       setRecipeInfo(data);
   //       setExtraInformation({
-  //         ingredients: data.extendedIngredients.length,
-  //         healthScore: data.healthScore,
-  //         readyInMinutes: data.readyInMinutes,
+  //         ingredients: data.ingredients.split("[").length - 1,
+  //         rating: data.rating + "%",
+  //         readyInMinutes: data.prep_time + " mins",
   //         servings: data.servings,
-  //         pricePerServing: data.pricePerServing,
+  //         pricePerServing: "$" + data.expense / 100,
+  //         calories: getCalories(data.description),
   //       });
   //     }
-  //     if (data?.analyzedInstructions[0]?.steps) {
-  //       setRecipeInstructions(data.analyzedInstructions[0].steps);
+
+  //     if (error) {
+  //       alert("IndividualRecipe.js useEffect: " + error);
   //     }
 
-  //     if (data?.extendedIngredients) {
-  //       setRecipeIngredients(data.extendedIngredients);
-  //     }
-  //     if (error) {
-  //       console.log(error, "IndividualRecipe.js");
-  //     }
   //     setTimeout(() => {
   //       setIsLoading(false);
-  //     }, 1000);
+  //     }, 800);
   //   };
-  //   fetchRecipeInfo();
+  //   fetchCurrentRecipe();
   // }, [recipeId]);
-
-  // method 2:
-
-  useEffect(() => {
-    const fetchCurrentRecipe = async () => {
-      setIsLoading(true);
-      const { data, error } = await apiClient.getIndividualRecipe(recipeId);
-
-      if (data) {
-        stringToArray(data.ingredients, setRecipeIngredients);
-        stringToArray(data.steps, setRecipeInstructions);
-        setRecipeInfo(data);
-        setExtraInformation({
-          ingredients: data.ingredients.split("[").length - 1,
-          rating: data.rating + "%",
-          readyInMinutes: data.prep_time + " mins",
-          servings: data.servings,
-          pricePerServing: "$" + data.expense / 100,
-          calories: getCalories(data.description),
-        });
-      }
-
-      if (error) {
-        alert("IndividualRecipe.js useEffect: " + error);
-      }
-
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 800);
-    };
-    fetchCurrentRecipe();
-  }, [recipeId]);
 
   // get comments for cur recipe.
   useEffect(() => {
@@ -289,14 +288,14 @@ export default function IndividualRecipe({
             user={user}
           />
         </div>
-        <div style={{ marginTop: "300px" }}> </div>
+        {/* <div style={{ marginTop: "300px" }}> </div> */}
         <div
           className="IndividualRecipe"
           style={isLoading ? { filter: "blur(2px)" } : {}}
         >
           {/*<b> summary </b> : {recipeInfo.summary}*/}
 
-          <div>
+          {/* <div>
             <Typography variant="h5"> Share your thoughts </Typography>
             <div className="container">
               {!user?.email ? (
@@ -412,7 +411,7 @@ export default function IndividualRecipe({
                 user={user}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

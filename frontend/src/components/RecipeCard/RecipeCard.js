@@ -27,31 +27,33 @@ export default function RecipeCard({
   const [likes, setLikes] = useState(true);
   const [mealInfo, setMealInfo] = useState(true);
 
-  useEffect(() => {
-    const checkRecipe = async () => {
-      const { data, error } = await apiClient.checkSavedRecipe(recipeInfo?.id);
-      if (data) {
-        setSaved(data);
-      }
+  console.log("hi");
+  // useEffect(() => {
+  //   console.log(recipeInfo)
+  //   const checkRecipe = async () => {
+  //     const { data, error } = await apiClient.checkSavedRecipe(recipeInfo?.id);
+  //     if (data) {
+  //       setSaved(data);
+  //     }
 
-      if (error) {
-        console.log("Check saved recipe error.......RecipeCard.js");
-      }
-      if (handleLinks === false) {
-        setLinks(false);
-      }
-      if (handleLikes === false) {
-        setLikes(false);
-      }
-      if (handleMealInfo === false) {
-        setMealInfo(false);
-      }
-    };
+  //     if (error) {
+  //       console.log("Check saved recipe error.......RecipeCard.js");
+  //     }
+  //     if (handleLinks === false) {
+  //       setLinks(false);
+  //     }
+  //     if (handleLikes === false) {
+  //       setLikes(false);
+  //     }
+  //     if (handleMealInfo === false) {
+  //       setMealInfo(false);
+  //     }
+  //   };
 
-    if (user.email) {
-      checkRecipe();
-    }
-  }, [recipeInfo, handleLinks, handleLikes, handleMealInfo]);
+  //   if (user.email) {
+  //     checkRecipe();
+  //   }
+  // }, [recipeInfo, handleLinks, handleLikes, handleMealInfo]);
 
   const limit = 17;
 
@@ -70,8 +72,9 @@ export default function RecipeCard({
   return (
     <div className="RecipeCard">
       <Link to={`/recipes/${recipeInfo?.api_id}`}>
+      {/* {console.log((`../../assets/food_pics/${recipeInfo.image_url}.png`))} */}
         <div className="card-img">
-          <img src={recipeInfo?.image_url} alt={recipeInfo?.title}></img>
+          <img src={(`/food_pics/${recipeInfo?.image_url}.png`)} alt={recipeInfo?.title}></img>
         </div>
       </Link>
       <div className="card-info">
@@ -105,7 +108,7 @@ export default function RecipeCard({
           ""
         )}
 
-        {likes ? (
+        {/* {likes ? (
           <>
             {!dontDisplaySave ? (
               <button className="save-btn" onClick={handleOnClick}>
@@ -121,7 +124,7 @@ export default function RecipeCard({
           </>
         ) : (
           ""
-        )}
+        )} */}
       </div>
       <div className="mealInfo">
         {meal ? (

@@ -2,6 +2,8 @@
 import RecipeCard from "../RecipeCard/RecipeCard";
 import navbar from "../../assets/navbar.jpg";
 
+import Recipes from "../../data/all_recipes.json"
+
 import "./SearchPage.css";
 export default function SearchPage({
     searchTerm,
@@ -16,7 +18,7 @@ export default function SearchPage({
                 Search Results: {searchTerm ? searchTerm : localStorage.getItem('recipe-search-term')}
             </div>
             <div className="filter-display">
-                {recipes
+                {Recipes.all_recipes
                     .filter((r) =>
                         r.title.toLowerCase().includes(searchTerm ? searchTerm.toLowerCase() : localStorage.getItem('recipe-search-term').toLowerCase())
                     )

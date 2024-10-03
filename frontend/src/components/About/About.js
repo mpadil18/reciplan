@@ -3,6 +3,7 @@ import navbar from "../../assets/navbar.jpg"
 import ann from "../../assets/ann.jpg"
 import maritza from "../../assets/maritza.jpg"
 import andrew from "../../assets/andrew.jpg"
+import andrew_s from "../../assets/andrew_s.png"
 import github from "../../assets/github.svg"
 import "./About.css"
 
@@ -20,6 +21,13 @@ export default function About() {
       image: maritza,
       github: "https://github.com/mpadil18",
       linkedin: "https://www.linkedin.com/in/maritza-padilla/",
+      bio: ""
+    },
+    {
+      name: "Andrew Sanchez",
+      image: andrew_s,
+      github: "https://github.com/annisanc",
+      linkedin: "https://www.linkedin.com/in/andrew-sanchez-ucsc/",
       bio: ""
     },
     {

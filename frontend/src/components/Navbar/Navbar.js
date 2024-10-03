@@ -8,6 +8,8 @@ import wheel from "../../assets/wheel-icon.svg";
 import close from "../../assets/close.svg";
 import userlogo from "../../assets/user.svg";
 
+import Recipes from "../../data/all_recipes.json"
+
 import "./Navbar.css";
 
 export default function Navbar({ user, setUser, setSearchTerm }) {
@@ -119,9 +121,10 @@ export default function Navbar({ user, setUser, setSearchTerm }) {
             ) : null}
           </div>
         ) : (
-          <Link to="/login" className={`login-link ${isSearch ? 'phone-view': ''}`}>
-            Login
-          </Link>
+          null
+          // <Link to="/login" className={`login-link ${isSearch ? 'phone-view': ''}`}>
+          //   Login
+          // </Link>
         )}
       </div>
     </div>
