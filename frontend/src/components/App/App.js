@@ -53,212 +53,212 @@ function App() {
   // console.log("On App.js component, colors is: ", colors);
 
   // Remain logged in
-  useEffect(() => {
-    const token = localStorage.getItem("recipath_token");
-    const fetchUser = async () => {
-      const { data, error } = await apiClient.getUser();
-      if (data) {
-        setUser(data.user);
-      }
+  // useEffect(() => {
+  //   const token = localStorage.getItem("recipath_token");
+  //   const fetchUser = async () => {
+  //     const { data, error } = await apiClient.getUser();
+  //     if (data) {
+  //       setUser(data.user);
+  //     }
 
-      if (error) {
-        console.log(`${error} ----------- App.js`);
-      }
-    };
+  //     if (error) {
+  //       console.log(`${error} ----------- App.js`);
+  //     }
+  //   };
 
-    const tokenValid = async () => {
-      if (token) {
-        apiClient.setToken(token);
-        await fetchUser();
-      }
-    };
-    tokenValid();
-  }, []);
+  //   const tokenValid = async () => {
+  //     if (token) {
+  //       apiClient.setToken(token);
+  //       await fetchUser();
+  //     }
+  //   };
+  //   tokenValid();
+  // }, []);
 
   //  Fetch homepage recipes
-  useEffect(() => {
-    const fetchRecipes = async () => {
-      const { data, error } = await apiClient.fetchAllRecipes();
+  // useEffect(() => {
+  //   const fetchRecipes = async () => {
+  //     const { data, error } = await apiClient.fetchAllRecipes();
 
-      if (data) {
-        setRecipes(data.recipes);
-      }
+  //     if (data) {
+  //       setRecipes(data.recipes);
+  //     }
 
-      if (error) {
-        alert(error.message);
-      }
-    };
-    fetchRecipes();
-  }, []);
+  //     if (error) {
+  //       alert(error.message);
+  //     }
+  //   };
+  //   fetchRecipes();
+  // }, []);
 
   // Fetch user profile
-  useEffect(() => {
-    const fetchProfile = async () => {
-      const { data, error } = await apiClient.fetchProfile();
-      if (data) {
-        setProfile(data);
-      }
-      if (error) {
-        console.log(error, "Profile.js");
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProfile = async () => {
+  //     const { data, error } = await apiClient.fetchProfile();
+  //     if (data) {
+  //       setProfile(data);
+  //     }
+  //     if (error) {
+  //       console.log(error, "Profile.js");
+  //     }
+  //   };
 
-    if (user.email) {
-      fetchProfile();
-    }
-  }, [user]);
+  //   if (user.email) {
+  //     fetchProfile();
+  //   }
+  // }, [user]);
 
   // Fetch all users & profiles
-  useEffect(() => {
-    const fetchProfile = async () => {
-      const { data, error } = await apiClient.fetchAllProfiles();
-      if (data) {
-        setAllProfiles(data);
-      }
-      if (error) {
-        console.log(error, "ProfileResults.js");
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProfile = async () => {
+  //     const { data, error } = await apiClient.fetchAllProfiles();
+  //     if (data) {
+  //       setAllProfiles(data);
+  //     }
+  //     if (error) {
+  //       console.log(error, "ProfileResults.js");
+  //     }
+  //   };
 
-    if (user.email) {
-      fetchProfile();
-    }
-  }, [user]);
+  //   if (user.email) {
+  //     fetchProfile();
+  //   }
+  // }, [user]);
 
   // Fetch saved recipes
-  useEffect(() => {
-    const fetchRecipes = async () => {
-      const { data, error } = await apiClient.fetchSavedRecipes();
-      if (data) {
-        console.log("SAVED REC",data.savedRecipes)
-        setSaved(data.savedRecipes);
-      }
+  // useEffect(() => {
+  //   const fetchRecipes = async () => {
+  //     const { data, error } = await apiClient.fetchSavedRecipes();
+  //     if (data) {
+  //       console.log("SAVED REC",data.savedRecipes)
+  //       setSaved(data.savedRecipes);
+  //     }
 
-      if (error) {
-        console.log(error, "fetch saved recipes");
-      }
-    };
+  //     if (error) {
+  //       console.log(error, "fetch saved recipes");
+  //     }
+  //   };
 
-    if (user.email) {
-      fetchRecipes();
-    }
-  }, [user, changeSave]);
+  //   if (user.email) {
+  //     fetchRecipes();
+  //   }
+  // }, [user, changeSave]);
   
   // Handle save recipe
-  const handleSave = async (r) => {
-    const { data, error } = await apiClient.saveRecipe(r);
+  // const handleSave = async (r) => {
+  //   const { data, error } = await apiClient.saveRecipe(r);
 
-    if (data) {
-      setChangeSave(!changeSave);
-      console.log("Save: ", data);
-    }
+  //   if (data) {
+  //     setChangeSave(!changeSave);
+  //     console.log("Save: ", data);
+  //   }
 
-    if (error) {
-      alert(error);
-    }
-  };
+  //   if (error) {
+  //     alert(error);
+  //   }
+  // };
 
-  // Handle unsave recipe
-  const handleUnsave = async (r) => {
-    const { data, error } = await apiClient.unsaveRecipe(r);
+  // // Handle unsave recipe
+  // const handleUnsave = async (r) => {
+  //   const { data, error } = await apiClient.unsaveRecipe(r);
 
-    if (data) {
-      setChangeSave(!changeSave);
-      console.log("Unsave: ", data);
-    }
+  //   if (data) {
+  //     setChangeSave(!changeSave);
+  //     console.log("Unsave: ", data);
+  //   }
 
-    if (error) {
-      alert(error);
-    }
-  };
+  //   if (error) {
+  //     alert(error);
+  //   }
+  // };
 
   const handleUpdateUser = async (user) => {
     setUser(user);
   };
   
   // Fetch saved meal plans
-  useEffect(() => {
-    const fetchPlans = async () => {
-      const { data, error } = await apiClient.fetchSavedMealPlans();
-      //console.log("SAVED MEAL PLANS: ", data.savedMealPlans)
-      if (error) {
-        console.log(error, "fetch saved meal plans");
-      }
-      if (data) {
-        console.log("Success- continue");
-        var setMealPlans = []
-        var recData = []
-        var setMealInfo = []
-        var planIds = []
-        //Iterate over each recipe in each meal plan, and create a set of meal plans, where each set contains
-        //recipe id numbers.
-        data.savedMealPlans.forEach((s) => {
-          var mealPlan = []
-          var mealInfo = []
-          for (let i = 0; i < 5; i++) {
-            if (s[`recipe_id${i}`] !== null && typeof s[`recipe_id${i}`] != 'undefined') {
-              if (!planIds.includes(s[`id`])) {
-                planIds.push(s[`id`])
-              }
-              mealPlan.push(s[`recipe_id${i}`])
-              mealInfo.push([s[`time${i}`], s[`meal_name${i}`], s[`title`]])
-            }
-          }
-          setMealPlans.push(mealPlan)
-          setMealInfo.push(mealInfo)
-          console.log("SET PLANS", setMealPlans, "SET MEAL INFOS", setMealInfo, "MEAL IDS", planIds)
-        })
-        //const dataOne = await apiClient.fetchLocalDbRecipe(recId[0]);
-        //console.log("FIRST REC", dataOne.data.recipe, recId[0])
+  // useEffect(() => {
+  //   const fetchPlans = async () => {
+  //     const { data, error } = await apiClient.fetchSavedMealPlans();
+  //     //console.log("SAVED MEAL PLANS: ", data.savedMealPlans)
+  //     if (error) {
+  //       console.log(error, "fetch saved meal plans");
+  //     }
+  //     if (data) {
+  //       console.log("Success- continue");
+  //       var setMealPlans = []
+  //       var recData = []
+  //       var setMealInfo = []
+  //       var planIds = []
+  //       //Iterate over each recipe in each meal plan, and create a set of meal plans, where each set contains
+  //       //recipe id numbers.
+  //       data.savedMealPlans.forEach((s) => {
+  //         var mealPlan = []
+  //         var mealInfo = []
+  //         for (let i = 0; i < 5; i++) {
+  //           if (s[`recipe_id${i}`] !== null && typeof s[`recipe_id${i}`] != 'undefined') {
+  //             if (!planIds.includes(s[`id`])) {
+  //               planIds.push(s[`id`])
+  //             }
+  //             mealPlan.push(s[`recipe_id${i}`])
+  //             mealInfo.push([s[`time${i}`], s[`meal_name${i}`], s[`title`]])
+  //           }
+  //         }
+  //         setMealPlans.push(mealPlan)
+  //         setMealInfo.push(mealInfo)
+  //         console.log("SET PLANS", setMealPlans, "SET MEAL INFOS", setMealInfo, "MEAL IDS", planIds)
+  //       })
+  //       //const dataOne = await apiClient.fetchLocalDbRecipe(recId[0]);
+  //       //console.log("FIRST REC", dataOne.data.recipe, recId[0])
 
-        //Iterate over each set of meal plans and get the meal plan info
-        //Add the mealplan id to the returned set
-        for (const rec of setMealPlans) {
-          console.log("MGMT", rec)
-          var temp =[]
-          for (let i = 0; i < rec.length; i++) {
-            const recipeInfo = await apiClient.fetchLocalDbRecipe(rec[i])
-            console.log("PEND", recipeInfo.data.recipe)
-            temp.push(recipeInfo.data.recipe)
-          }
-          recData.push(temp)
-          // const recipeInfo = await apiClient.fetchLocalDbRecipe(rec)
-          // recData.push(recipeInfo.data.recipe)
-        }
-        console.log("SET:", recData, planIds)
-        if (recData) {
-          setSavePlan(recData);
-        }
+  //       //Iterate over each set of meal plans and get the meal plan info
+  //       //Add the mealplan id to the returned set
+  //       for (const rec of setMealPlans) {
+  //         console.log("MGMT", rec)
+  //         var temp =[]
+  //         for (let i = 0; i < rec.length; i++) {
+  //           const recipeInfo = await apiClient.fetchLocalDbRecipe(rec[i])
+  //           console.log("PEND", recipeInfo.data.recipe)
+  //           temp.push(recipeInfo.data.recipe)
+  //         }
+  //         recData.push(temp)
+  //         // const recipeInfo = await apiClient.fetchLocalDbRecipe(rec)
+  //         // recData.push(recipeInfo.data.recipe)
+  //       }
+  //       console.log("SET:", recData, planIds)
+  //       if (recData) {
+  //         setSavePlan(recData);
+  //       }
 
-        if (setMealInfo) {
-          setMealPlanInfo(setMealInfo);
-        }
+  //       if (setMealInfo) {
+  //         setMealPlanInfo(setMealInfo);
+  //       }
 
-        if (planIds) {
-          setMealPlanIds(planIds);
-        }
-      }
-    };
-    fetchPlans();
-  }, [user, changeSavePlan]);
+  //       if (planIds) {
+  //         setMealPlanIds(planIds);
+  //       }
+  //     }
+  //   };
+  //   fetchPlans();
+  // }, [user, changeSavePlan]);
 
   // Handle unsave mealPlan
-  const handleUnsavePlan = async (p) => {
-    console.log("UUUU:", p)
-    const { data, error } = await apiClient.fetchSavedMealPlan(p);
-    //const { data, error } = await apiClient.unsavePlan(p);
-    console.log("UNSAVED: ", data.mealPlan, p)
+  // const handleUnsavePlan = async (p) => {
+  //   console.log("UUUU:", p)
+  //   const { data, error } = await apiClient.fetchSavedMealPlan(p);
+  //   //const { data, error } = await apiClient.unsavePlan(p);
+  //   console.log("UNSAVED: ", data.mealPlan, p)
 
-    if (data) {
-      setChangeSavePlan(!changeSavePlan);
-      const { dataOne, error } = await apiClient.unsavePlan(data.mealPlan[0]);
-      console.log("Unsave: ", data, dataOne);
-    }
+  //   if (data) {
+  //     setChangeSavePlan(!changeSavePlan);
+  //     const { dataOne, error } = await apiClient.unsavePlan(data.mealPlan[0]);
+  //     console.log("Unsave: ", data, dataOne);
+  //   }
 
-    if (error) {
-      alert(error);
-    }
-  };
+  //   if (error) {
+  //     alert(error);
+  //   }
+  // };
 
   return (
     <div className="App">
@@ -271,8 +271,8 @@ function App() {
               <Home
                 user={user}
                 recipes={recipes}
-                handleSave={handleSave}
-                handleUnsave={handleUnsave}
+                // handleSave={handleSave}
+                // handleUnsave={handleUnsave}
               />
             }
           />
@@ -290,8 +290,8 @@ function App() {
               <IndividualRecipe
                 user={user}
                 recipes={recipes}
-                handleSave={handleSave}
-                handleUnsave={handleUnsave}
+                // handleSave={handleSave}
+                // handleUnsave={handleUnsave}
               />
             }
           />
@@ -338,9 +338,9 @@ function App() {
                 savePlan={savePlan}
                 mealPlanInfo={mealPlanInfo}
                 mealPlanIds={mealPlanIds}
-                handleSave={handleSave}
-                handleUnsave={handleUnsave}
-                handleUnsavePlan={handleUnsavePlan}
+                // handleSave={handleSave}
+                // handleUnsave={handleUnsave}
+                // handleUnsavePlan={handleUnsavePlan}
               />
             }
           />
@@ -353,8 +353,8 @@ function App() {
               <FilterResults
                 user={user}
                 recipes={recipes}
-                handleSave={handleSave}
-                handleUnsave={handleUnsave}
+                // handleSave={handleSave}
+                // handleUnsave={handleUnsave}
               />
             }
           />
@@ -366,8 +366,8 @@ function App() {
                 searchTerm={searchTerm}
                 recipes={recipes}
                 user={user}
-                handleSave={handleSave}
-                handleUnsave={handleUnsave}
+                // handleSave={handleSave}
+                // handleUnsave={handleUnsave}
               />
             }
           />
