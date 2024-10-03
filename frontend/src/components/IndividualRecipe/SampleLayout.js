@@ -236,7 +236,7 @@ export default function SampleLayout({
                     <div className="Layout_Image_Div">
                         <img
                             className="Layout_Image"
-                            src={(`/food_pics/${recipeInfo?.image_url}.png`)}
+                            src={(`/reciplan/food_pics/${recipeInfo?.image_url}.png`)}
                             alt={(`${recipeInfo?.title}`)}
                         />
                     </div>

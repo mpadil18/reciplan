@@ -265,6 +265,17 @@ function App() {
       <BrowserRouter>
         <Navbar user={user} setUser={setUser} setSearchTerm={setSearchTerm} />
         <Routes>
+        <Route
+            path="/reciplan"
+            element={
+              <Home
+                user={user}
+                recipes={recipes}
+                // handleSave={handleSave}
+                // handleUnsave={handleUnsave}
+              />
+            }
+          />
           <Route
             path="/"
             element={

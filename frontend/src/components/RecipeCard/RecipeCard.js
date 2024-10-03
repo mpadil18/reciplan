@@ -74,7 +74,7 @@ export default function RecipeCard({
       <Link to={`/recipes/${recipeInfo?.api_id}`}>
       {/* {console.log((`../../assets/food_pics/${recipeInfo.image_url}.png`))} */}
         <div className="card-img">
-          <img src={(`/food_pics/${recipeInfo?.image_url}.png`)} alt={recipeInfo?.title}></img>
+          <img src={(`/reciplan/food_pics/${recipeInfo?.image_url}.png`)} alt={recipeInfo?.title}></img>
         </div>
       </Link>
       <div className="card-info">
