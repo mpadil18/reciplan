@@ -1,11 +1,11 @@
 {"all_recipes":
 [
     {"id":1, "api_id":1, "title":"Fettuccine Alfredo", "category":"Main Course", "image_url":"Fettuccine_Alfredo", "prep_time":20, "description":"Hi", "rating":100, "expense":125, "ingredients":["1 Chicken Breast", "1 Tbsp. of Oil", "1 Can of Alfredo Sauce", "1 Box of Pasta", "2 Cloves Garlic", "1 Onion"] , "steps":["Boil water and add salt.", "Thaw chicken and cut into strips, then halves if you wish. Add seasoning to chicken.", "Heat a skillet, pour oil, and add the pieces. Cook undisturbed for 4 min, then flip the pieces to cook for an additional 3 min. Do not constantly stir, though you can half cover to prevent splatter.", "After they’re done, remove from skillet and cover to stay warm.", "Cook pasta until al dente, according to instructions, then drain them.", "In the skillet where chicken was cooked, add 2 cloves of minced garlic and diced onion, when translucent, add sauce and cook until warm.", "Add the chicken to the skillet, and pour into the pasta."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":4}, 
-    {"id":2, "api_id":2, "title":"Pita Pizza", "category":"Main Course", "image_url":"Pita_Pizza", "prep_time":20, "description":"Hi", "rating":75, "expense":5, "ingredients":["1 Pita Bread", "1 Small Can of Tomato Sauce", "1 Cup of Cheese", "Additional Toppings"], "steps":["Preheat oven to 400 degrees Fahrenheit", "On pita bread, add tomato sauce, cheese, and toppings of of your choice", "Place the decorated pita pizza onto a pan and let cook in the oven for 10-12 minutes", "Remove pizza from the oven and let cool,"], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+    {"id":2, "api_id":2, "title":"Pita Pizza", "category":"Main Course", "image_url":"Pita_Pizza", "prep_time":20, "description":"Hi", "rating":75, "expense":5, "ingredients":["1 Pita Bread", "1 Small Can of Tomato Sauce", "1 Cup of Cheese", "Additional Toppings"], "steps":["Preheat oven to 400 degrees Fahrenheit", "On pita bread, add tomato sauce, cheese, and toppings of of your choice", "Place the decorated pita pizza onto a pan and let cook in the oven for 10-12 minutes", "Remove pizza from the oven and let cool,"], "vegan":1, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1}, 
     {"id":3, "api_id":3, "title":"Chicken Noodle Soup", "category":"Soup", "image_url":"Chicken_Noodle_Soup", "prep_time":60, "description":"Hi", "rating":100, "expense":20, "ingredients":["2 Chicken Breasts", "2-3 cups of water", "2 spoonfuls of Knorr Seasoning", "Onion", "Celery", "Red Cayenne Pepper", "Italian Seasoning", "Garlic Salt", "1 Box of Pasta"], "steps":["Place 2 thawed chicken breasts on the trivet of your instant pot.", "Pour 3 cups of water into the pot, and add 2 spoonfuls of Knorr Seasoning, mixing thoroughly to create the broth.", "Generously sprikle red cayenne pepper, italian seasoning, and garlic salt into the broth.", "Dice half an onion, and dice 1-2 sticks of celery. Add them to the pot. Add thawed mixed vegetables if you wish.", "Cut 4 Russet potatoes into fourths, and place them in the pot.", "Close the instant pot with the pressure cooking lid, ensuring the valve on the lid is sealed.", "Cook on HIGH for 10 minute. When complete, quick release the pressure by shifting the valve on the lid. Remove the lid when all pressure is released.", "Remove the chicken breasts, and cut them into chunks on a cutting board. Add them back to the pot.", "Add 1/2 package of your favorite pasta to the pot, and set the pot to ''saute''. Cook until the pasta texture is to your liking.", "Serve, and enjoy!"], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":6},
     {"id":4, "api_id":4, "title":"Baked Potato Soup", "category":"Soup", "image_url":"Baked_Potato_Soup", "prep_time":60, "description":"Hi", "rating":85, "expense":20, "ingredients":["6 large russet potatoes, peeled and diced","1 medium onion, diced","3 cloves garlic, minced","4 cups chicken broth (or vegetable broth)","1 cup heavy cream (or half-and-half for a lighter option)","1 cup sour cream“,“1 ½ cups shredded cheddar cheese","5-6 slices of bacon, cooked and crumbled","2 tbsp butter","1 tsp salt (adjust to taste)","1/2 tsp black pepper","1/2 tsp smoked paprika (optional)","2 tbsp cornstarch mixed with 2 tbsp cold water (optional, for thickening)"], "steps":["Turn your Instant Pot to the Sauté setting.", "Add the butter and let it melt.", "Sauté the onion and garlic for about 2-3 minutes until soft and fragrant.", "Add the diced potatoes to the pot.", "Pour in the chicken broth, and add salt, pepper, and paprika. Stir well to combine.", "Close the Instant Pot lid and set the valve to the Sealing position.", "Select the Pressure Cook or Manual setting and set the time for 8 minutes on High Pressure.", "After the cooking cycle is complete, let the pressure naturally release for about 5 minutes, then perform a quick release to release any remaining pressure.", "Open the lid carefully.", "Using a potato masher or immersion blender, lightly mash some of the potatoes in the soup to create a creamy texture, leaving some chunks for a hearty feel.", "Stir in the heavy cream (or half-and-half), sour cream, and shredded cheddar cheese until melted and well combined.", "If you'd like the soup thicker, stir in the cornstarch slurry (2 tbsp cornstarch mixed with 2 tbsp cold water), and simmer the soup on the Sauté setting for a couple of minutes until it thickens.","Stir in half of the crumbled bacon.","Ladle the soup into bowls.", "Top with extra cheddar cheese, crumbled bacon, green onions, and a dollop of sour cream if desired."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":6},
     {"id":5, "api_id":5, "title":"Ham and Eggs", "category":"Breakfast", "image_url":"Ham_And_Eggs", "prep_time":15, "description":"Hi", "rating":50, "expense":10, "ingredients":["2 Eggs", "1 Tomato", "2 Slices of Ham"], "steps":["Dice half of a tomato and a few slices of ham.", "Pour oil onto a skillet set to medium heat, then add the ham.", "After ham is lightly browned add the tomatoes to the skillet, followed by two eggs.", "Add salt and cook for three minutes or until ready."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":2},
-    {"id":6, "api_id":6, "title":"Cereal", "category":"Breakfast", "image_url":"Cereal", "prep_time":5, "description":"Hi", "rating":70, "expense":5, "ingredients":["Cereal", "Milk"], "steps":["Add cereal of your choosing into a bowl.", "Pour milk and enjoy."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    {"id":6, "api_id":6, "title":"Cereal", "category":"Breakfast", "image_url":"Cereal", "prep_time":5, "description":"Hi", "rating":70, "expense":5, "ingredients":["Cereal", "Milk"], "steps":["Add cereal of your choosing into a bowl.", "Pour milk and enjoy."], "vegan":1, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1},
     {"id":7, "api_id":7, "title":"Tuna Sandwiches", "category":"Finger Food", "image_url":"Tuna_Sandwiches", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
             "1 can of tuna",
@@ -38,7 +38,7 @@
             "Slowly press down the plunger to filter the coffee.",
             "Pour and enjoy your fresh coffee."
         ], 
-        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+        "vegan":1, "vegetarian":1, "glutenFree":1, "dairyFree":1, "servings":1},
     {"id":9, "api_id":9, "title":"Classic Burger", "category":"Main Course", "image_url":"Classic_Burger", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
             "1 lb ground beef (for 4 patties)",
@@ -89,7 +89,7 @@
             "Wet a sharp knife and slice the roll into bite-sized pieces.",
             "Serve with soy sauce, wasabi, and pickled ginger."
         ],
-        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+        "vegan":0, "vegetarian":0, "glutenFree":1, "dairyFree":0, "servings":1},
 
     {"id":11, "api_id":11, "title":"BBQ Pulled Pork Sandwich", "category":"Main Course", "image_url":"BBQ_Pulled_Pork_Sandwich", "prep_time":5, "description":"Hi", "rating":70, "expense":5,
         "ingredients":[
@@ -136,7 +136,7 @@
             "Remove when both sides are crispy and cheese is melted.",
             "Slice diagonally and serve."
         ],
-        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+        "vegan":0, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1},
 
     {"id":13, "api_id":13, "title":"Spaghetti Carbonara", "category":"Main Course", "image_url":"Spaghetti_Carbonara", "prep_time":5, "description":"Hi", "rating":70, "expense":5,
         "ingredients":[
@@ -183,7 +183,7 @@
             "Repeat with remaining batter.",
             "Serve with butter and maple syrup.",
             "Garnish with fresh berries if desired."
-        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+        ], "vegan":1, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1},
 
     {"id":15, "api_id":15, "title":"Chicken Caesar Salad", "category":"Salad", "image_url":"Chicken_Caesar_Salad", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
@@ -207,7 +207,7 @@
             "Add black pepper to taste.",
             "Serve immediately.",
             "Optionally, garnish with lemon wedges."
-        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},  
+        ], "vegan":0, "vegetarian":1, "glutenFree":1, "dairyFree":1, "servings":1},  
 
     {"id":16, "api_id":16, "title":"Omelette", "category":"Breakfast", "image_url":"Omelette", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
@@ -250,7 +250,7 @@
             "Remove from heat and cut into wedges.",
             "Serve with salsa, sour cream, or guacamole.",
             "Enjoy hot."
-        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+        ], "vegan":0, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1}, 
 
     {"id":18, "api_id":18, "title":"Chocolate Chip Cookies", "category":"Finger Food", "image_url":"Chocolate_Chip_Cookies", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
@@ -274,7 +274,7 @@
             "Bake for 10-12 minutes until edges are golden.",
             "Let cookies cool on the baking sheet for 5 minutes.",
             "Transfer to a wire rack to cool completely."
-        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+        ], "vegan":1, "vegetarian":1, "glutenFree":1, "dairyFree":0, "servings":1}, 
 
     {"id":19, "api_id":19, "title":"Classic Mojito", "category":"Drink", "image_url":"Classic_Mojito", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
@@ -298,7 +298,7 @@
             "Garnish with a lime wedge and mint sprig.",
             "Serve chilled.",
             "Enjoy responsibly."
-        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+        ], "vegan":1, "vegetarian":1, "glutenFree":1, "dairyFree":1, "servings":1}, 
 
     {"id":20, "api_id":20, "title":"Vegetable Stir Fry", "category":"Main Course", "image_url":"Vegetable_Stir_Fry", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
@@ -318,7 +318,7 @@
             "Stir-fry for 2-3 minutes until tender-crisp.",
             "Add a splash of soy sauce and a pinch of sugar.",
             "Stir-fry for another minute"
-        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+        ], "vegan":1, "vegetarian":1, "glutenFree":1, "dairyFree":0, "servings":1},
 
     {"id":21, "api_id":21, "title":"Garlic Parmesan Roasted Broccoli", "category":"Side Dish", "image_url":"Garlic_Parmesean_Roasted_Brocoli", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
         "ingredients":[
@@ -334,7 +334,7 @@
             "Spread the broccoli on a baking sheet in a single layer.",
             "Roast for 20 minutes until tender and slightly crispy.",
             "Sprinkle Parmesan cheese over the broccoli and serve."
-        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+        ], "vegan":1, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1},
 
     {"id":22, "api_id":22, "title":"Crispy Roasted Potatoes", "category":"Side Dish", "image_url":"Crispy_Roasted_Potatoes", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
     "ingredients":[
@@ -351,7 +351,7 @@
         "Spread potatoes on a baking sheet in a single layer.",
         "Roast for 25-30 minutes, flipping halfway through, until crispy.",
         "Garnish with fresh parsley if desired, and serve."
-    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    ], "vegan":0, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1},
 
     {"id":23, "api_id":23, "title":"Coleslaw", "category":"Side Dish", "image_url":"Coleslaw", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
     "ingredients":[
@@ -368,7 +368,7 @@
         "Pour the dressing over the cabbage and carrots, tossing to coat evenly.",
         "Refrigerate for at least 30 minutes to allow flavors to meld.",
         "Serve chilled as a refreshing side dish."
-    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    ], "vegan":0, "vegetarian":1, "glutenFree":0, "dairyFree":0, "servings":1},
 
     {"id":23, "api_id":23, "title":"Corn on the Cob", "category":"Side Dish", "image_url":"Corn_on_the_Cob", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
     "ingredients":[
@@ -383,7 +383,7 @@
         "Remove the corn from the water and let it cool slightly.",
         "Spread butter over each ear of corn and sprinkle with salt.",
         "Garnish with chopped parsley if desired, then serve warm."
-    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    ], "vegan":1, "vegetarian":1, "glutenFree":1, "dairyFree":1, "servings":1},
     
     {"id":24, "api_id":24, "title":"French Fries", "category":"Appetizer", "image_url":"French_Fries", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
     "ingredients":[
@@ -398,6 +398,6 @@
         "In a large pot, heat vegetable oil to 350°F (175°C). Fry the potatoes in batches until golden brown, about 4-5 minutes.",
         "Remove the fries with a slotted spoon and drain on paper towels.",
         "Season with salt and any additional spices while still hot, then serve immediately."
-    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}    
+    ], "vegan":1, "vegetarian":1, "glutenFree":1, "dairyFree":1, "servings":1}    
 ]
 }

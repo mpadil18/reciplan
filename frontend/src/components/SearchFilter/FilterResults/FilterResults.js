@@ -59,7 +59,7 @@ export default function FilterResults({ user, recipes, handleSave, handleUnsave 
     <div className="FilterResults" style={{backgroundImage: `url(${navbar})`}}>
       <div className="filter-display-name">
         {recipes
-            .filter(recipe => categoryType === recipe.category).length <= 0 && categoryType !== "View All" ? 
+            .filter(recipe => categoryType === recipe.category).length <= 0 && categoryType !== "View All"  && !(categoryType === "Vegetarian" || categoryType === "Vegan" || categoryType === "Gluten Free" || categoryType === "Dairy Free") ? 
             <div className="results">No results for {categoryType}
             </div> 
             : 
@@ -82,6 +82,24 @@ export default function FilterResults({ user, recipes, handleSave, handleUnsave 
             )
           ) 
           :
+
+          categoryType === "Vegetarian" || categoryType === "Vegan" || categoryType === "Gluten Free" || categoryType === "Dairy Free" ?
+          recipes
+            .filter(recipe => (categoryType === "Vegetarian" && recipe.vegetarian === 1) || (categoryType === "Vegan" && recipe.vegan === 1) || (categoryType === "Gluten Free" && recipe.glutenFree === 1) || (categoryType === "Dairy Free" && recipe.dairyFree === 1))
+            .map((r) => (
+              <RecipeCard
+                key={r.id}
+                user={user}
+                recipeInfo={r}
+                handleSave={handleSave}
+                handleUnsave={handleUnsave}
+              />
+            )
+          )
+
+          :
+
+
           recipes
             .filter(recipe => categoryType === recipe.category)
             .map((r) => (
