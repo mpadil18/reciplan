@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+
+
 
 import Home from "../Home/Home";
 import Register from "../Register/Register";
@@ -264,7 +267,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Navbar user={user} setUser={setUser} setSearchTerm={setSearchTerm} />
         <Routes>
         <Route
@@ -412,7 +415,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
