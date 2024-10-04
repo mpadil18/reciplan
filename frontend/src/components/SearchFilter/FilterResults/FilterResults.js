@@ -55,6 +55,7 @@ export default function FilterResults({ user, recipes, handleSave, handleUnsave 
 
   // const [category, setCategory] = useState(categoryType !== "View All" ? (1 << (11 - data.indexOf(categoryType))) : 0)
 
+  
   return (
     <div className="FilterResults" style={{backgroundImage: `url(${navbar})`}}>
       <div className="filter-display-name">
