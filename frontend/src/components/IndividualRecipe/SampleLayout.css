@@ -178,12 +178,13 @@
     }
 
     .Layout_Image_Div {
-        width: 600px;
+        /* width: 600px; */
+        width: 100%;
     }
 
     .Layout_Image {
         height: 464px;
-        width: 55%;
+        /* width: 55%; */
         object-fit: cover;
     }
 
@@ -207,7 +208,8 @@
     }
 
     .Layout_Ingredients_li {
-        width: 300px;
+        /* width: 300px; */
+        width: 100%;
         display: inline-block;
         text-align: left;
         font-size: 20px;

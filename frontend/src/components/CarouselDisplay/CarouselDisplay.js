@@ -67,7 +67,7 @@ export default function CarouselDisplay({
       {type === "rec" ? (
         <Carousel responsive={responsive}>
           {recipes
-            .slice(0, 10)
+            .slice(0, 50)
             .map((r) => (
               <RecipeCard
                 key={r.id}

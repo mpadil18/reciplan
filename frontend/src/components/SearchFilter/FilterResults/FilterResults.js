@@ -51,13 +51,15 @@ export default function FilterResults({ user, recipes, handleSave, handleUnsave 
   //   }
   // }
 
-  const [category, setCategory] = useState(categoryType !== "View All" ? (1 << (11 - data.indexOf(categoryType))) : 0)
+  console.log(categoryType)
+
+  // const [category, setCategory] = useState(categoryType !== "View All" ? (1 << (11 - data.indexOf(categoryType))) : 0)
 
   return (
     <div className="FilterResults" style={{backgroundImage: `url(${navbar})`}}>
       <div className="filter-display-name">
         {recipes
-            .filter((r) => Boolean((r.category & category) === category)).length === 0 ? 
+            .filter(recipe => categoryType === recipe.category).length <= 0 && categoryType !== "View All" ? 
             <div className="results">No results for {categoryType}
             </div> 
             : 
@@ -66,9 +68,9 @@ export default function FilterResults({ user, recipes, handleSave, handleUnsave 
           
         }
         <div className="filter-display">
-        {
+          {categoryType === "View All" ? 
+        
           recipes
-            .filter((r) => Boolean((r.category & category) === category))
             .map((r) => (
               <RecipeCard
                 key={r.id}
@@ -79,7 +81,34 @@ export default function FilterResults({ user, recipes, handleSave, handleUnsave 
               />
             )
           ) 
-        }
+          :
+          recipes
+            .filter(recipe => categoryType === recipe.category)
+            .map((r) => (
+              <RecipeCard
+                key={r.id}
+                user={user}
+                recipeInfo={r}
+                handleSave={handleSave}
+                handleUnsave={handleUnsave}
+              />
+            )
+          )        
+          }
+        {/* {
+          recipes
+            .filter(recipe => categoryType === recipe.category)
+            .map((r) => (
+              <RecipeCard
+                key={r.id}
+                user={user}
+                recipeInfo={r}
+                handleSave={handleSave}
+                handleUnsave={handleUnsave}
+              />
+            )
+          ) 
+        } */}
         </div>
       </div>
     </div>

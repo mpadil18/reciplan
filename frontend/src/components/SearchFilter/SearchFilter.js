@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import search from "../../assets/search.jpg";
+import RecipeCard from "../RecipeCard/RecipeCard";
 import "./SearchFilter.css"
+
+import Recipes from "../../data/all_recipes.json"
 
 export default function SearchFilter({ user }) {
   const [category, setCategory] = useState(Number(-1))
@@ -25,6 +28,7 @@ export default function SearchFilter({ user }) {
   ]
 
   return (
+    <div>
     <div className={`SearchFilter`} style={{ backgroundImage: `url(${search})`}}>
         <div className="filter-by">
           <div className="filter-name">Meal Types</div>
@@ -59,6 +63,18 @@ export default function SearchFilter({ user }) {
           <Link to={`/search/viewall`}>
             <div className="viewall">View all</div>
           </Link>
+      </div>
+    </div>
+      <div className="filter-display" style={{"padding": "50px 0px 100px 0px"}}>
+      {Recipes.all_recipes
+          .map((r) => (
+            <RecipeCard
+              key={r.id}
+              user={user}
+              recipeInfo={r}
+            />
+          )
+        )}
       </div>
     </div>
   )

@@ -89,12 +89,12 @@ export default function Navbar({ user, setUser, setSearchTerm }) {
             </>
           )}
         </div>
-        <Link
+        {/* <Link
           to="/wheel"
           className={`wheel-link ${user?.email ? 'margin-right' : ''} ${isSearch ? 'phone-view': ''}`}
         >
           <img src={wheel} alt="Wheel icon"></img>
-        </Link>
+        </Link> */}
 
         {user?.email ? (
           <div className={`user-btn ${isSearch ? 'phone-view': ''}`} ref={userBox}>

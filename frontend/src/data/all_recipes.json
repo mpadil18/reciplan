@@ -1,8 +1,403 @@
 {"all_recipes":
-[{"id":1, "api_id":1, "title":"Fettuccine Alfredo", "category":"Main Course", "image_url":"Fettuccine_Alfredo", "prep_time":20, "description":"Hi", "rating":100, "expense":125, "ingredients":["1 Chicken Breast", "1 Tbsp. of Oil", "1 Can of Alfredo Sauce", "1 Box of Pasta", "2 Cloves Garlic", "1 Onion"] , "steps":["Boil water and add salt.", "Thaw chicken and cut into strips, then halves if you wish. Add seasoning to chicken.", "Heat a skillet, pour oil, and add the pieces. Cook undisturbed for 4 min, then flip the pieces to cook for an additional 3 min. Do not constantly stir, though you can half cover to prevent splatter.", "After they’re done, remove from skillet and cover to stay warm.", "Cook pasta until al dente, according to instructions, then drain them.", "In the skillet where chicken was cooked, add 2 cloves of minced garlic and diced onion, when translucent, add sauce and cook until warm.", "Add the chicken to the skillet, and pour into the pasta."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":4}, 
-{"id":2, "api_id":2, "title":"Pita Pizza", "category":"Main Course", "image_url":"Pita_Pizza", "prep_time":20, "description":"Hi", "rating":75, "expense":5, "ingredients":["1 Pita Bread", "1 Small Can of Tomato Sauce", "1 Cup of Cheese", "Additional Toppings"], "steps":["Preheat oven to 400 degrees Fahrenheit", "On pita bread, add tomato sauce, cheese, and toppings of of your choice", "Place the decorated pita pizza onto a pan and let cook in the oven for 10-12 minutes", "Remove pizza from the oven and let cool,"], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
-{"id":3, "api_id":3, "title":"Chicken Noodle Soup", "category":"Soup", "image_url":"Chicken_Noodle_Soup", "prep_time":60, "description":"Hi", "rating":100, "expense":20, "ingredients":["2 Chicken Breasts", "2-3 cups of water", "2 spoonfuls of Knorr Seasoning", "Onion", "Celery", "Red Cayenne Pepper", "Italian Seasoning", "Garlic Salt", "1 Box of Pasta"], "steps":["Place 2 thawed chicken breasts on the trivet of your instant pot.", "Pour 3 cups of water into the pot, and add 2 spoonfuls of Knorr Seasoning, mixing thoroughly to create the broth.", "Generously sprikle red cayenne pepper, italian seasoning, and garlic salt into the broth.", "Dice half an onion, and dice 1-2 sticks of celery. Add them to the pot. Add thawed mixed vegetables if you wish.", "Cut 4 Russet potatoes into fourths, and place them in the pot.", "Close the instant pot with the pressure cooking lid, ensuring the valve on the lid is sealed.", "Cook on HIGH for 10 minute. When complete, quick release the pressure by shifting the valve on the lid. Remove the lid when all pressure is released.", "Remove the chicken breasts, and cut them into chunks on a cutting board. Add them back to the pot.", "Add 1/2 package of your favorite pasta to the pot, and set the pot to ''saute''. Cook until the pasta texture is to your liking.", "Serve, and enjoy!"], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":6},
-{"id":4, "api_id":4, "title":"Baked Potato Soup", "category":"Soup", "image_url":"Baked_Potato_Soup", "prep_time":60, "description":"Hi", "rating":85, "expense":20, "ingredients":["6 large russet potatoes, peeled and diced","1 medium onion, diced","3 cloves garlic, minced","4 cups chicken broth (or vegetable broth)","1 cup heavy cream (or half-and-half for a lighter option)","1 cup sour cream“,“1 ½ cups shredded cheddar cheese","5-6 slices of bacon, cooked and crumbled","2 tbsp butter","1 tsp salt (adjust to taste)","1/2 tsp black pepper","1/2 tsp smoked paprika (optional)","2 tbsp cornstarch mixed with 2 tbsp cold water (optional, for thickening)"], "steps":["Turn your Instant Pot to the Sauté setting.", "Add the butter and let it melt.", "Sauté the onion and garlic for about 2-3 minutes until soft and fragrant.", "Add the diced potatoes to the pot.", "Pour in the chicken broth, and add salt, pepper, and paprika. Stir well to combine.", "Close the Instant Pot lid and set the valve to the Sealing position.", "Select the Pressure Cook or Manual setting and set the time for 8 minutes on High Pressure.", "After the cooking cycle is complete, let the pressure naturally release for about 5 minutes, then perform a quick release to release any remaining pressure.", "Open the lid carefully.", "Using a potato masher or immersion blender, lightly mash some of the potatoes in the soup to create a creamy texture, leaving some chunks for a hearty feel.", "Stir in the heavy cream (or half-and-half), sour cream, and shredded cheddar cheese until melted and well combined.", "If you'd like the soup thicker, stir in the cornstarch slurry (2 tbsp cornstarch mixed with 2 tbsp cold water), and simmer the soup on the Sauté setting for a couple of minutes until it thickens.","Stir in half of the crumbled bacon.","Ladle the soup into bowls.", "Top with extra cheddar cheese, crumbled bacon, green onions, and a dollop of sour cream if desired."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":6},
-{"id":5, "api_id":5, "title":"Ham and Eggs", "category":"Breakfast", "image_url":"Ham_And_Eggs", "prep_time":15, "description":"Hi", "rating":50, "expense":10, "ingredients":["2 Eggs", "1 Tomato", "2 Slices of Ham"], "steps":["Dice half of a tomato and a few slices of ham.", "Pour oil onto a skillet set to medium heat, then add the ham.", "After ham is lightly browned add the tomatoes to the skillet, followed by two eggs.", "Add salt and cook for three minutes or until ready."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":2},
-{"id":6, "api_id":6, "title":"Cereal", "category":"Breakfast", "image_url":"Cereal", "prep_time":5, "description":"Hi", "rating":70, "expense":5, "ingredients":["Cereal", "Milk"], "steps":["Add cereal of your choosing into a bowl.", "Pour milk and enjoy."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}
-]}
+[
+    {"id":1, "api_id":1, "title":"Fettuccine Alfredo", "category":"Main Course", "image_url":"Fettuccine_Alfredo", "prep_time":20, "description":"Hi", "rating":100, "expense":125, "ingredients":["1 Chicken Breast", "1 Tbsp. of Oil", "1 Can of Alfredo Sauce", "1 Box of Pasta", "2 Cloves Garlic", "1 Onion"] , "steps":["Boil water and add salt.", "Thaw chicken and cut into strips, then halves if you wish. Add seasoning to chicken.", "Heat a skillet, pour oil, and add the pieces. Cook undisturbed for 4 min, then flip the pieces to cook for an additional 3 min. Do not constantly stir, though you can half cover to prevent splatter.", "After they’re done, remove from skillet and cover to stay warm.", "Cook pasta until al dente, according to instructions, then drain them.", "In the skillet where chicken was cooked, add 2 cloves of minced garlic and diced onion, when translucent, add sauce and cook until warm.", "Add the chicken to the skillet, and pour into the pasta."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":4}, 
+    {"id":2, "api_id":2, "title":"Pita Pizza", "category":"Main Course", "image_url":"Pita_Pizza", "prep_time":20, "description":"Hi", "rating":75, "expense":5, "ingredients":["1 Pita Bread", "1 Small Can of Tomato Sauce", "1 Cup of Cheese", "Additional Toppings"], "steps":["Preheat oven to 400 degrees Fahrenheit", "On pita bread, add tomato sauce, cheese, and toppings of of your choice", "Place the decorated pita pizza onto a pan and let cook in the oven for 10-12 minutes", "Remove pizza from the oven and let cool,"], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+    {"id":3, "api_id":3, "title":"Chicken Noodle Soup", "category":"Soup", "image_url":"Chicken_Noodle_Soup", "prep_time":60, "description":"Hi", "rating":100, "expense":20, "ingredients":["2 Chicken Breasts", "2-3 cups of water", "2 spoonfuls of Knorr Seasoning", "Onion", "Celery", "Red Cayenne Pepper", "Italian Seasoning", "Garlic Salt", "1 Box of Pasta"], "steps":["Place 2 thawed chicken breasts on the trivet of your instant pot.", "Pour 3 cups of water into the pot, and add 2 spoonfuls of Knorr Seasoning, mixing thoroughly to create the broth.", "Generously sprikle red cayenne pepper, italian seasoning, and garlic salt into the broth.", "Dice half an onion, and dice 1-2 sticks of celery. Add them to the pot. Add thawed mixed vegetables if you wish.", "Cut 4 Russet potatoes into fourths, and place them in the pot.", "Close the instant pot with the pressure cooking lid, ensuring the valve on the lid is sealed.", "Cook on HIGH for 10 minute. When complete, quick release the pressure by shifting the valve on the lid. Remove the lid when all pressure is released.", "Remove the chicken breasts, and cut them into chunks on a cutting board. Add them back to the pot.", "Add 1/2 package of your favorite pasta to the pot, and set the pot to ''saute''. Cook until the pasta texture is to your liking.", "Serve, and enjoy!"], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":6},
+    {"id":4, "api_id":4, "title":"Baked Potato Soup", "category":"Soup", "image_url":"Baked_Potato_Soup", "prep_time":60, "description":"Hi", "rating":85, "expense":20, "ingredients":["6 large russet potatoes, peeled and diced","1 medium onion, diced","3 cloves garlic, minced","4 cups chicken broth (or vegetable broth)","1 cup heavy cream (or half-and-half for a lighter option)","1 cup sour cream“,“1 ½ cups shredded cheddar cheese","5-6 slices of bacon, cooked and crumbled","2 tbsp butter","1 tsp salt (adjust to taste)","1/2 tsp black pepper","1/2 tsp smoked paprika (optional)","2 tbsp cornstarch mixed with 2 tbsp cold water (optional, for thickening)"], "steps":["Turn your Instant Pot to the Sauté setting.", "Add the butter and let it melt.", "Sauté the onion and garlic for about 2-3 minutes until soft and fragrant.", "Add the diced potatoes to the pot.", "Pour in the chicken broth, and add salt, pepper, and paprika. Stir well to combine.", "Close the Instant Pot lid and set the valve to the Sealing position.", "Select the Pressure Cook or Manual setting and set the time for 8 minutes on High Pressure.", "After the cooking cycle is complete, let the pressure naturally release for about 5 minutes, then perform a quick release to release any remaining pressure.", "Open the lid carefully.", "Using a potato masher or immersion blender, lightly mash some of the potatoes in the soup to create a creamy texture, leaving some chunks for a hearty feel.", "Stir in the heavy cream (or half-and-half), sour cream, and shredded cheddar cheese until melted and well combined.", "If you'd like the soup thicker, stir in the cornstarch slurry (2 tbsp cornstarch mixed with 2 tbsp cold water), and simmer the soup on the Sauté setting for a couple of minutes until it thickens.","Stir in half of the crumbled bacon.","Ladle the soup into bowls.", "Top with extra cheddar cheese, crumbled bacon, green onions, and a dollop of sour cream if desired."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":6},
+    {"id":5, "api_id":5, "title":"Ham and Eggs", "category":"Breakfast", "image_url":"Ham_And_Eggs", "prep_time":15, "description":"Hi", "rating":50, "expense":10, "ingredients":["2 Eggs", "1 Tomato", "2 Slices of Ham"], "steps":["Dice half of a tomato and a few slices of ham.", "Pour oil onto a skillet set to medium heat, then add the ham.", "After ham is lightly browned add the tomatoes to the skillet, followed by two eggs.", "Add salt and cook for three minutes or until ready."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":2},
+    {"id":6, "api_id":6, "title":"Cereal", "category":"Breakfast", "image_url":"Cereal", "prep_time":5, "description":"Hi", "rating":70, "expense":5, "ingredients":["Cereal", "Milk"], "steps":["Add cereal of your choosing into a bowl.", "Pour milk and enjoy."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    {"id":7, "api_id":7, "title":"Tuna Sandwiches", "category":"Finger Food", "image_url":"Tuna_Sandwiches", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1 can of tuna",
+            "2 tbsp mayonnaise",
+            "Salt and pepper to taste",
+            "Lemon juice (optional)",
+            "1 celery stalk (optional, diced)",
+            "1 small onion (optional, diced)",
+            "2 slices of bread",
+            "Butter or extra mayonnaise",
+            "Lettuce leaf",
+            "1 tomato slice"
+        ],
+        "steps":["Open a can of tuna and drain the water or oil.","Place the tuna in a mixing bowl.","Add 2 tbsp of mayonnaise.","Season with salt, pepper, and a squeeze of lemon juice.","Stir in diced celery and onions (optional).","Toast two slices of bread until golden brown.","Spread butter or extra mayonnaise on the toasted bread.","Add a lettuce leaf and tomato slice on one slice.","Spoon the tuna mixture onto the bread.","Top with the second slice of bread, cut in half, and serve."], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    {"id":8, "api_id":8, "title":"French Pressed Coffee", "category":"Drink", "image_url":"French_Pressed_Coffee", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "Fresh coffee beans (1-2 tbsp per cup)",
+            "Water (200°F/90°C)",
+            "French press"
+          ], 
+        "steps":[
+            "Boil water to 200°F (around 90°C).",
+            "Grind fresh coffee beans to a coarse consistency.",
+            "Place 1-2 tbsp of ground coffee per cup into the French press.",
+            "Pour a small amount of hot water over the grounds and let it bloom for 30 seconds.",
+            "Add the rest of the hot water.",
+            "Stir gently to ensure the grounds are fully soaked.",
+            "Place the lid on the French press but do not plunge yet.",
+            "Let the coffee steep for 4 minutes.",
+            "Slowly press down the plunger to filter the coffee.",
+            "Pour and enjoy your fresh coffee."
+        ], 
+        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    {"id":9, "api_id":9, "title":"Classic Burger", "category":"Main Course", "image_url":"Classic_Burger", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1 lb ground beef (for 4 patties)",
+            "Salt and pepper",
+            "4 slices of cheese (optional)",
+            "4 burger buns",
+            "Lettuce leaves",
+            "Tomato slices",
+            "Onion slices",
+            "Condiments (mustard, mayonnaise, ketchup)",
+            "Oil for grilling"
+        ], 
+        "steps":[
+            "Preheat a grill or stovetop pan over medium-high heat.",
+            "Shape ground beef into patties, about 4 oz each.",
+            "Season patties with salt and pepper on both sides.",
+            "Brush a little oil on the grill or pan to prevent sticking.",
+            "Cook patties for 4-5 minutes per side, flipping once.",
+            "Add cheese to patties during the last minute, if desired.",
+            "Toast burger buns on the grill or pan for 1 minute.",
+            "Spread condiments (mustard, mayo, ketchup) on the bottom bun.",
+            "Place the burger patty on the bun and top with lettuce, tomato, and onion.",
+            "Add the top bun and serve."
+        ],
+        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":10, "api_id":10, "title":"Sushi Roll", "category":"Finger Food", "image_url":"Sushi_Roll", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1 cup sushi rice",
+            "1 tbsp rice vinegar",
+            "1 tsp sugar",
+            "1/2 tsp salt",
+            "4 sheets of nori (seaweed)",
+            "Fillings (cucumber, avocado, tuna, or any preferred ingredients)",
+            "Soy sauce",
+            "Wasabi",
+            "Pickled ginger"
+        ], 
+        "steps":[
+            "Rinse sushi rice until water runs clear.",
+            "Cook the rice in a rice cooker with a 1:1 ratio of rice to water.",
+            "Once cooked, mix rice with rice vinegar, sugar, and salt.",
+            "Let the rice cool to room temperature.",
+            "Place a sheet of nori (seaweed) on a bamboo mat.",
+            "Spread a thin layer of sushi rice on the nori, leaving 1 inch at the top.",
+            "Add fillings (e.g., cucumber, avocado, tuna) in the center.",
+            "Roll the sushi tightly using the bamboo mat.",
+            "Wet a sharp knife and slice the roll into bite-sized pieces.",
+            "Serve with soy sauce, wasabi, and pickled ginger."
+        ],
+        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":11, "api_id":11, "title":"BBQ Pulled Pork Sandwich", "category":"Main Course", "image_url":"BBQ_Pulled_Pork_Sandwich", "prep_time":5, "description":"Hi", "rating":70, "expense":5,
+        "ingredients":[
+            "2-3 lb pork shoulder",
+            "Salt and pepper",
+            "1 tbsp smoked paprika",
+            "1 cup BBQ sauce",
+            "1 onion (chopped)",
+            "1/2 cup water",
+            "4 sandwich buns",
+            "Extra BBQ sauce for serving",
+            "Coleslaw (optional)",
+            "Pickles (optional)"
+        ], 
+        "steps":[
+            "Season pork shoulder with salt, pepper, and smoked paprika.",
+            "Brown the pork in a hot skillet for 3-4 minutes per side.",
+            "Transfer to a slow cooker and pour in 1 cup of BBQ sauce.",
+            "Add a chopped onion and ½ cup of water.",
+            "Cook on low for 8 hours or until the pork is tender.",
+            "Shred the pork using two forks.",
+            "Toast sandwich buns.",
+            "Pile the shredded pork onto the buns.",
+            "Drizzle extra BBQ sauce on top.",
+            "Serve with coleslaw or pickles on the side."
+        ],
+        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":12, "api_id":12, "title":"Classic Grilled Cheese", "category":"Finger Food", "image_url":"Classic_Grilled_Cheese", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "2 slices of bread",
+            "Butter",
+            "2 slices of cheddar cheese"
+        ],
+        "steps":[
+            "Butter one side of two slices of bread.",
+            "Heat a skillet over medium heat.",
+            "Place one slice of bread, butter side down, in the skillet.",
+            "Add a slice or two of cheddar cheese on top of the bread.",
+            "Place the second slice of bread on top, butter side up.",
+            "Cook for 3-4 minutes until the bottom is golden.",
+            "Flip the sandwich and cook the other side.",
+            "Press down gently to help the cheese melt.",
+            "Remove when both sides are crispy and cheese is melted.",
+            "Slice diagonally and serve."
+        ],
+        "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":13, "api_id":13, "title":"Spaghetti Carbonara", "category":"Main Course", "image_url":"Spaghetti_Carbonara", "prep_time":5, "description":"Hi", "rating":70, "expense":5,
+        "ingredients":[
+            "200g spaghetti",
+            "2 eggs",
+            "1/2 cup grated Parmesan cheese",
+            "100g pancetta or bacon (diced)",
+            "Salt and pepper",
+            "Pasta water (reserved)"
+        ],
+        "steps":[
+            "Boil a large pot of salted water.",
+            "Add spaghetti and cook until al dente.",
+            "In a bowl, whisk together 2 eggs and ½ cup grated Parmesan.",
+            "Cook diced pancetta or bacon in a skillet until crispy.",
+            "Drain the pasta, reserving ½ cup of the pasta water.",
+            "Toss the hot pasta in the skillet with the pancetta.",
+            "Remove from heat and quickly stir in the egg mixture.",
+            "Add reserved pasta water as needed to create a creamy sauce.",
+            "Season with black pepper and extra Parmesan.",
+            "Serve immediately."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},  
+
+    {"id":14, "api_id":14, "title":"Pancakes", "category":"Breakfast", "image_url":"Pancakes", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1 cup all-purpose flour",
+            "1 tbsp sugar",
+            "1 tsp baking powder",
+            "1 egg",
+            "1 cup milk",
+            "2 tbsp melted butter",
+            "Butter for cooking",
+            "Maple syrup for serving",
+            "Fresh berries (optional)"
+        ],
+        "steps":[
+            "In a bowl, whisk together 1 cup flour, 1 tbsp sugar, and 1 tsp baking powder.",
+            "In another bowl, whisk 1 egg, 1 cup milk, and 2 tbsp melted butter.",
+            "Gradually add the wet ingredients to the dry ingredients, stirring until just combined.",
+            "Preheat a skillet over medium heat and grease lightly with butter.",
+            "Pour ¼ cup of batter onto the skillet for each pancake.",
+            "Cook until bubbles form on the surface, about 2-3 minutes.",
+            "Flip and cook the other side for 1-2 minutes.",
+            "Repeat with remaining batter.",
+            "Serve with butter and maple syrup.",
+            "Garnish with fresh berries if desired."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":15, "api_id":15, "title":"Chicken Caesar Salad", "category":"Salad", "image_url":"Chicken_Caesar_Salad", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1 chicken breast",
+            "Salt and pepper",
+            "Romaine lettuce",
+            "Caesar dressing",
+            "Croutons",
+            "Grated Parmesan cheese",
+            "Lemon wedges (optional)",
+            "Black pepper to taste"
+          ], 
+        "steps":[
+            "Cook a chicken breast seasoned with salt and pepper until golden.",
+            "Let the chicken rest and slice it thinly.",
+            "Wash and dry Romaine lettuce.",
+            "Toss the lettuce with Caesar dressing.",
+            "Add croutons and grated Parmesan cheese.",
+            "Arrange sliced chicken on top of the salad.",
+            "Sprinkle more Parmesan on top.",
+            "Add black pepper to taste.",
+            "Serve immediately.",
+            "Optionally, garnish with lemon wedges."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},  
+
+    {"id":16, "api_id":16, "title":"Omelette", "category":"Breakfast", "image_url":"Omelette", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "2-3 eggs",
+            "Salt and pepper",
+            "Butter for cooking",
+            "Fillings: cheese, ham, mushrooms, spinach (optional)",
+            "Chives or parsley for garnish"
+        ], 
+        "steps":[
+            "Crack 2-3 eggs into a bowl and whisk with a fork.",
+            "Add a pinch of salt and pepper.",
+            "Heat a non-stick pan with a little butter.",
+            "Pour the eggs into the pan and swirl to coat the surface.",
+            "As the eggs start to set, add cheese and fillings like ham, mushrooms, or spinach.",
+            "Fold one side of the omelette over the fillings.",
+            "Cook for 1-2 more minutes until cheese is melted.",
+            "Slide onto a plate.",
+            "Garnish with herbs like chives or parsley.",
+            "Serve with toast on the side."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+
+    {"id":17, "api_id":17, "title":"Quesadilla", "category":"Breakfast", "image_url":"Quesadilla", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1 tortilla",
+            "Shredded cheese (any variety)",
+            "Cooked chicken, beans, or vegetables (optional)",
+            "Salsa (optional)",
+            "Sour cream (optional)",
+            "Guacamole (optional)"
+        ], 
+        "steps":[
+            "Heat a skillet over medium heat.",
+            "Place a tortilla in the skillet.",
+            "Sprinkle shredded cheese evenly over half the tortilla.",
+            "Add cooked chicken, beans, or veggies on top of the cheese.",
+            "Fold the tortilla in half over the fillings.",
+            "Cook for 2-3 minutes until the bottom is golden and crispy.",
+            "Flip and cook the other side for another 2 minutes.",
+            "Remove from heat and cut into wedges.",
+            "Serve with salsa, sour cream, or guacamole.",
+            "Enjoy hot."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+
+    {"id":18, "api_id":18, "title":"Chocolate Chip Cookies", "category":"Finger Food", "image_url":"Chocolate_Chip_Cookies", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1/2 cup butter",
+            "1/2 cup sugar",
+            "1 egg",
+            "1 tsp vanilla extract",
+            "1 1/2 cups all-purpose flour",
+            "1/2 tsp baking soda",
+            "Pinch of salt",
+            "1 cup chocolate chips"
+        ], 
+        "steps":[
+            "Preheat oven to 350°F (175°C).",
+            "Cream together ½ cup butter and ½ cup sugar.",
+            "Add 1 egg and 1 tsp vanilla extract, and mix well.",
+            "In another bowl, whisk together 1½ cups flour, ½ tsp baking soda, and a pinch of salt.",
+            "Gradually add the dry ingredients to the wet ingredients.",
+            "Stir in 1 cup of chocolate chips.",
+            "Drop spoonfuls of dough onto a baking sheet.",
+            "Bake for 10-12 minutes until edges are golden.",
+            "Let cookies cool on the baking sheet for 5 minutes.",
+            "Transfer to a wire rack to cool completely."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+
+    {"id":19, "api_id":19, "title":"Classic Mojito", "category":"Drink", "image_url":"Classic_Mojito", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "10 mint leaves",
+            "1 tbsp sugar",
+            "1 lime (juice)",
+            "Ice",
+            "2 oz white rum",
+            "Club soda or sparkling water",
+            "Lime wedge (for garnish)",
+            "Mint sprig (for garnish)"
+        ], 
+        "steps":[
+            "Muddle 10 mint leaves and 1 tbsp sugar in a glass.",
+            "Add the juice of 1 lime.",
+            "Fill the glass halfway with ice.",
+            "Pour in 2 oz white rum.",
+            "Stir gently to combine.",
+            "Top off with club soda or sparkling water.",
+            "Stir again to mix the flavors.",
+            "Garnish with a lime wedge and mint sprig.",
+            "Serve chilled.",
+            "Enjoy responsibly."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}, 
+
+    {"id":20, "api_id":20, "title":"Vegetable Stir Fry", "category":"Main Course", "image_url":"Vegetable_Stir_Fry", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "1 tbsp oil (vegetable or sesame)",
+            "1 clove garlic (minced)",
+            "1 tsp fresh ginger (minced)",
+            "Vegetables: carrots, bell peppers, broccoli (sliced)",
+            "1 tbsp soy sauce",
+            "Pinch of sugar",
+            "1 egg (optional)",
+            "Sesame seeds or green onions for garnish"
+          ], 
+        "steps":[
+            "Heat 1 tbsp oil in a wok or skillet over high heat.",
+            "Add minced garlic and ginger, and stir-fry for 30 seconds.",
+            "Toss in sliced vegetables (carrots, bell peppers, broccoli).",
+            "Stir-fry for 2-3 minutes until tender-crisp.",
+            "Add a splash of soy sauce and a pinch of sugar.",
+            "Stir-fry for another minute"
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":21, "api_id":21, "title":"Garlic Parmesan Roasted Broccoli", "category":"Side Dish", "image_url":"Garlic_Parmesean_Roasted_Brocoli", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+        "ingredients":[
+            "2 heads of broccoli, cut into florets",
+            "2 tbsp olive oil",
+            "3 cloves garlic, minced",
+            "1/4 cup grated Parmesan cheese",
+            "Salt and pepper to taste"
+          ], 
+        "steps":[
+            "Preheat the oven to 400°F (200°C).",
+            "Toss broccoli florets with olive oil, garlic, salt, and pepper.",
+            "Spread the broccoli on a baking sheet in a single layer.",
+            "Roast for 20 minutes until tender and slightly crispy.",
+            "Sprinkle Parmesan cheese over the broccoli and serve."
+        ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":22, "api_id":22, "title":"Crispy Roasted Potatoes", "category":"Side Dish", "image_url":"Crispy_Roasted_Potatoes", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+    "ingredients":[
+        "4 medium potatoes, diced",
+        "2 tbsp olive oil",
+        "1 tsp garlic powder",
+        "1 tsp paprika",
+        "Salt and pepper to taste",
+        "Fresh parsley for garnish (optional)"
+        ], 
+    "steps":[
+        "Preheat oven to 425°F (220°C).",
+        "Toss diced potatoes with olive oil, garlic powder, paprika, salt, and pepper.",
+        "Spread potatoes on a baking sheet in a single layer.",
+        "Roast for 25-30 minutes, flipping halfway through, until crispy.",
+        "Garnish with fresh parsley if desired, and serve."
+    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":23, "api_id":23, "title":"Coleslaw", "category":"Side Dish", "image_url":"Coleslaw", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+    "ingredients":[
+        "4 cups shredded green cabbage",
+        "1 cup shredded carrots",
+        "1/2 cup mayonnaise",
+        "2 tbsp apple cider vinegar",
+        "1 tbsp sugar",
+        "Salt and pepper to taste"
+        ], 
+    "steps":[
+        "In a large bowl, combine the shredded cabbage and carrots.",
+        "In a separate bowl, mix together mayonnaise, apple cider vinegar, sugar, salt, and pepper.",
+        "Pour the dressing over the cabbage and carrots, tossing to coat evenly.",
+        "Refrigerate for at least 30 minutes to allow flavors to meld.",
+        "Serve chilled as a refreshing side dish."
+    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+
+    {"id":23, "api_id":23, "title":"Corn on the Cob", "category":"Side Dish", "image_url":"Corn_on_the_Cob", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+    "ingredients":[
+        "4 ears of fresh corn, husked",
+        "4 tbsp butter",
+        "Salt to taste",
+        "Chopped parsley for garnish (optional)"
+        ], 
+    "steps":[
+        "Bring a large pot of water to a boil and add the husked corn.",
+        "Boil the corn for 5-7 minutes until tender.",
+        "Remove the corn from the water and let it cool slightly.",
+        "Spread butter over each ear of corn and sprinkle with salt.",
+        "Garnish with chopped parsley if desired, then serve warm."
+    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1},
+    
+    {"id":24, "api_id":24, "title":"French Fries", "category":"Appetizer", "image_url":"French_Fries", "prep_time":5, "description":"Hi", "rating":70, "expense":5, 
+    "ingredients":[
+        "4 large russet potatoes",
+        "Vegetable oil for frying",
+        "Salt to taste",
+        "Optional: pepper, garlic powder, or paprika for seasoning"
+        ], 
+    "steps":[
+        "Peel the potatoes (if desired) and cut them into thin strips.",
+        "Soak the cut potatoes in cold water for at least 30 minutes to remove excess starch, then drain and pat dry.",
+        "In a large pot, heat vegetable oil to 350°F (175°C). Fry the potatoes in batches until golden brown, about 4-5 minutes.",
+        "Remove the fries with a slotted spoon and drain on paper towels.",
+        "Season with salt and any additional spices while still hot, then serve immediately."
+    ], "vegan":0, "vegetarian":0, "glutenFree":0, "dairyFree":0, "servings":1}    
+]
+}

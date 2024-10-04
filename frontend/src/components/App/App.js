@@ -22,6 +22,8 @@ import AboutUs from "../About/About";
 import ContactUs from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 
+import Recipes from "../../data/all_recipes.json"
+
 import { useDataLayerValue } from "../../context/DataLayer";
 
 import "./App.css";
@@ -363,7 +365,7 @@ function App() {
             element={
               <FilterResults
                 user={user}
-                recipes={recipes}
+                recipes={Recipes.all_recipes}
                 // handleSave={handleSave}
                 // handleUnsave={handleUnsave}
               />
