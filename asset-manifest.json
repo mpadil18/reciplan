@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/reciplan/static/css/main.d303c754.chunk.css",
-    "main.js": "/reciplan/static/js/main.62f739d8.chunk.js",
-    "main.js.map": "/reciplan/static/js/main.62f739d8.chunk.js.map",
+    "main.js": "/reciplan/static/js/main.75b8f0fd.chunk.js",
+    "main.js.map": "/reciplan/static/js/main.75b8f0fd.chunk.js.map",
     "runtime-main.js": "/reciplan/static/js/runtime-main.5d37994f.js",
     "runtime-main.js.map": "/reciplan/static/js/runtime-main.5d37994f.js.map",
     "static/css/2.458499d8.chunk.css": "/reciplan/static/css/2.458499d8.chunk.css",
-    "static/js/2.82e4660b.chunk.js": "/reciplan/static/js/2.82e4660b.chunk.js",
-    "static/js/2.82e4660b.chunk.js.map": "/reciplan/static/js/2.82e4660b.chunk.js.map",
+    "static/js/2.315fd0c1.chunk.js": "/reciplan/static/js/2.315fd0c1.chunk.js",
+    "static/js/2.315fd0c1.chunk.js.map": "/reciplan/static/js/2.315fd0c1.chunk.js.map",
     "index.html": "/reciplan/index.html",
     "static/css/2.458499d8.chunk.css.map": "/reciplan/static/css/2.458499d8.chunk.css.map",
     "static/css/main.d303c754.chunk.css.map": "/reciplan/static/css/main.d303c754.chunk.css.map",
-    "static/js/2.82e4660b.chunk.js.LICENSE.txt": "/reciplan/static/js/2.82e4660b.chunk.js.LICENSE.txt",
+    "static/js/2.315fd0c1.chunk.js.LICENSE.txt": "/reciplan/static/js/2.315fd0c1.chunk.js.LICENSE.txt",
     "static/media/blueberry.022acf46.jpg": "/reciplan/static/media/blueberry.022acf46.jpg",
     "static/media/budget-icon.05d48936.svg": "/reciplan/static/media/budget-icon.05d48936.svg",
     "static/media/close.abed7002.svg": "/reciplan/static/media/close.abed7002.svg",
@@ -50,8 +50,8 @@
   "entrypoints": [
     "static/js/runtime-main.5d37994f.js",
     "static/css/2.458499d8.chunk.css",
-    "static/js/2.82e4660b.chunk.js",
+    "static/js/2.315fd0c1.chunk.js",
     "static/css/main.d303c754.chunk.css",
-    "static/js/main.62f739d8.chunk.js"
+    "static/js/main.75b8f0fd.chunk.js"
   ]
 }
