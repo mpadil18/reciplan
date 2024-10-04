@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import App from "./components/App/App";
 import "./index.css";
 
+//hi
+
 import { DataLayer } from "./context/DataLayer";
 import reducer, { initialState } from "./context/reducer";
 
